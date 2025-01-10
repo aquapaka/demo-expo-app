@@ -5,9 +5,10 @@ type Props = {
   icon?: ReactNode;
   label: string;
   theme?: "primary" | "secondary";
+  onPress: () => void;
 };
 
-export default function Button({ label, theme, icon }: Props) {
+export default function Button({ label, theme, icon, onPress }: Props) {
   return (
     <View style={styles.buttonContainer}>
       <Pressable
@@ -15,7 +16,7 @@ export default function Button({ label, theme, icon }: Props) {
           styles.button,
           theme === "primary" ? styles.primaryButton : styles.secondaryButton,
         ]}
-        onPress={() => alert("Button pressed")}
+        onPress={onPress}
       >
         {icon && icon}
         <Text style={styles.buttonLabel}>{label}</Text>
