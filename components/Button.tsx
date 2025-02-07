@@ -41,12 +41,10 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   primaryButton: {
-    borderWidth: 2,
-    borderColor: "orange",
-    backgroundColor: "pink",
+    backgroundColor: "#aec3b0",
   },
   secondaryButton: {
-    backgroundColor: "gray",
+    backgroundColor: "#ffe6a7",
   },
   buttonLabel: {
     fontSize: 16,
